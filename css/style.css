@@ -14,8 +14,10 @@ body {
 body main {
   background-color: hsl(0, 0%, 100%);
   padding: 20px;
-  height: 80vh;
-  max-width: 290px;
+  height: 85vh;
+  width: 90%;
+  max-width: 330px;
+  min-width: 300px;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -34,6 +36,9 @@ body main .blog-card-tag {
   padding: 0.4rem 0.7rem;
   border-radius: 5px;
   text-decoration: none;
+}
+body main p {
+  font-size: 16px;
 }
 body main figure {
   display: flex;
