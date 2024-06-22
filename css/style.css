@@ -14,9 +14,9 @@ body {
 body main {
   background-color: hsl(0, 0%, 100%);
   padding: 20px;
-  height: 85vh;
+  height: 80vh;
   width: 90%;
-  max-width: 330px;
+  max-width: 350px;
   min-width: 300px;
   border-radius: 20px;
   display: flex;
@@ -45,7 +45,7 @@ body main figure {
   align-items: center;
 }
 body main figure img {
-  width: 30%;
+  width: 20%;
 }
 body main figure figcaption {
   margin-left: 10px;
