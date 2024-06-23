@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
 $primary-color: hsl(47, 88%, 63%);
 
 $white: hsl(0, 0%, 100%);
@@ -22,19 +24,26 @@ body {
         padding: 20px;
         height: 80vh;
         width: 90%;
-        max-width: 350px;
+        max-width: 400px;
         min-width: 300px;
         border-radius: 20px;
         display: flex;
         flex-direction: column;
         justify-content:space-between;
         align-items: start;
+        font-family: "Figtree", sans-serif;
+        border: 1px solid $black;
+        box-shadow: 8px 8px $black;
         
 
         .blog-ilustration {
             width: 100%;
             border-radius: 10px;
-            border: 1px solid black;
+
+            &:hover{
+                transform: scale(0.95);
+                cursor: pointer;
+            }
         }
 
         .blog-card-tag {
@@ -44,11 +53,33 @@ body {
             padding: 0.4rem 0.7rem;
             border-radius: 5px;
             text-decoration: none;
+
+            &:hover{
+                color: $primary-color;
+                background-color: $black;
+                transform: scale(1.05);
+            }
+        }
+
+        .blog-card-date {
+            font-weight: 500;
+            color: $black;
+        }
+
+        h1 {
+            font-weight: 800;
+
+            &:hover{
+                color: $primary-color;
+                cursor: pointer;
+                transform: scale(0.99);
+            }
         }
 
 
-        p {
+        .blog-card-text {
             font-size: 16px;
+            color: $grey;
         }
 
         figure{
@@ -60,7 +91,21 @@ body {
             }
 
             figcaption {
-                margin-left: 10px;
+                margin-left: 15px;
+                font-weight: 800;
+            }
+
+            &:hover {
+                color: $primary-color;
+                cursor: pointer;
+                // text-decoration: underline;
+                img{
+                    width: 25%;
+                }
+                figcaption {
+                    margin-left: 10px;
+                }
+
             }
         }
 
